@@ -1446,8 +1446,14 @@ cAppliMalt::cAppliMalt(int argc,char ** argv) :
               mCom= mCom + " +UseClas2=true" + " +Clas2=" +QUOTE(mEquiv[1]);
           if (mEquiv.size()>2)
               mCom= mCom + " +UseClas3=true" + " +Clas3=" +QUOTE(mEquiv[2]);
-
           if (mEquiv.size()>3)
+              mCom= mCom + " +UseClas4=true" + " +Clas4=" +QUOTE(mEquiv[3]);
+          if (mEquiv.size()>4)
+              mCom= mCom + " +UseClas5=true" + " +Clas5=" +QUOTE(mEquiv[4]);
+          if (mEquiv.size()>5)
+              mCom= mCom + " +UseClas6=true" + " +Clas6=" +QUOTE(mEquiv[5]);
+
+          if (mEquiv.size()>6)
               ELISE_ASSERT(false,"too many equiv class for Malt, use MicMac");
       }
       if (mPenalSelImBestNadir>0)
